@@ -1,0 +1,415 @@
+<!DOCTYPE  00html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icone.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href=".css/style.css">
+    <title>Assesoria Contábil Digital</title>
+</head>
+
+<style type="text/css">
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    @media screen and (max-width: 400px)
+             {
+        .flip-card, .flip-card1, .flip-card2{
+            float: center;
+            padding-left: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        header{
+            margin: auto;
+        }
+
+.picture{
+    position: relative;
+    float: left;
+    padding-left: 80px;
+    margin: auto;
+}
+
+.section {
+   max-width: 80%;
+   padding-right: 0;
+
+}
+      
+
+
+    }
+
+    body{
+        font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        background-image: url("./images/azulteste2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header{
+    background-color: #5E5F61;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px #BBB;
+    padding: 10px;
+    text-decoration-line: right;
+    font-size: 10px;
+}
+
+.title{
+    font-size: 26px;
+
+}
+
+.container{
+    max-width:900px;
+    margin: auto;
+    
+}
+
+section{
+    position: relative;
+    padding: 40px;
+    background-image: url("./images/backgroundnovo.jfif");
+    background-size: cover;
+    /*usamos background-size: cover para deixar a imagem do tamanho da nossa DIV*/
+    overflow: hidden;
+}
+
+.formContainer{
+    padding: 40px;
+    padding-left: 40px;
+    max-width: 50%px;
+    background-color: #FFFFFFBB;
+    text-align: center;
+}
+
+.formFrase{
+    padding: 450px;
+    float: center;
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    text-align: center;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+    outline: none;
+}
+
+.mb{
+    margin-bottom: 20px;
+}
+
+/* The flip card container 1*/
+.flip-card {
+    padding-right: 60px;
+  float: center;  
+  width: 300px;
+  height: 450px;
+  border: 1px #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFFBB;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* The flip card container 1,5*/
+.flip-card1 {
+     padding-right: 60px;
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  border: 1px #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front1, .flip-card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front1 {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back1 {
+  background-color: #FFFFFFBB;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* The flip card container - 2*/
+.flip-card2 {
+     padding-right: 60px;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front2 {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back2 {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
+
+.picture{
+    width: 200px;
+    padding-top: 20px;
+    padding-left: 150px;
+}
+
+.description{
+    display: inline-block;
+    position: static;
+    padding-top: 0;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+}
+
+.description p, .description h4{
+    margin-bottom: 20px;    
+}
+
+.email{
+    font-family: Arial, Helvética, sans-serif;
+    font-weight: bold;
+}
+
+.site{
+    background-color: #9EA7A7;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    Font-size: 12px;
+    margin: 5px;
+    border: 1px solid #BBB;
+}
+
+
+
+</style>
+
+<body>
+    <div class="container">
+        <br><br><br>
+        <header>
+            <h1 class="title">ASSESORIA CONTÁBIL DIGITAL</h1>
+            Campinas/SP
+        </header>
+        <br><br>
+        <section>
+            <div class="formContainer">
+                <h2 class="mb">
+                   FIQUE ATENTO! ✔
+                </h2>
+                <p class="mb">
+                   EVITE PENALIDADES COM A LEI! Mesmo sendo MEI a contabilidade é muito importante e deverá receber atenção. Mas fique tranquilo, aqui, sou especialista em empresa MEI e ME, de grande e pequeno porte, e estou preparado para melhor atendê-lo.
+                   Não fique em dúvida, solicite uma consultoria pelo nosso whatsapp.  
+                </p>
+                <h2 class="mb">
+                    A NOSSA MISSÃO ✔
+                </h2>
+                <p class="mb">
+                    Buscamos sempre atender nossos clientes no máximo conforto e qualidade, dentro da legislação, ética e dos padrões contábeis.
+                </p>   
+                <h2 class="mb">
+                    A NOSSA VISÃO ✔
+                </h2>
+                <p>
+                    Tornar-se referência na área contábil, através da prestação de serviço com total transparência e compromisso com nossos clientes.
+                </p><br>
+                 <h2 class="mb">
+                 OS NOSSOS VALORES ✔
+                </h2>
+                <p>
+                    Prezamos pela ética, integridade, parceria, respeito, comprometimento e inovação para melhor atender. 
+                </p>
+            </div>
+            <br><br>
+        <center>    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./images/servicos.png" alt="Avatar" style="width:400px;height:450px;">
+    </div>
+    <div class="flip-card-back">
+        <img src="./images/servicopartedois.png" alt="Avatar" style="width:400px;height:450px;">
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+      <img src="./images/renda.png" alt="Avatar" style="width:400px;height:450px;">
+    </div>
+    <div class="flip-card-back">
+        <img src="./images/FORM.png" alt="Avatar" style="width:400px;height:450px;">
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="flip-card2">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front2">
+      <img src="./images/icon.jpg" alt="Avatar" style="width:400px;height:200px;">
+    </div>
+
+
+
+    <div class="flip-card-back">
+      <h3>NOS ENCONTRE AQUI</h3>
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.965609256913!2d-47.14340778503302!3d-22.988292084970382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b6040a2faf09%3A0x82119c410b0f0b76!2sAv.%20M%C3%A1rio%20Trevenzoli%2C%20943%20-%20Jardim%20Planalto%20de%20Viracopos%2C%20Campinas%20-%20SP%2C%2013056-020!5e0!3m2!1spt-BR!2sbr!4v1648866942620!5m2!1spt-BR!2sbr" width="400" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+      </div>
+  </div>
+</div>
+ </center>
+         </section>
+
+         <div><br><br><br></div>
+              <footer>
+                  <img class="picture" src="./images/redes.png">
+                  <div class="description">
+                      <h4>⬂  NOSSAS REDES SOCIAIS  ⬃</h4>
+                      <p><a href="https://wa.me/55019992810663?text=Olá, bom dia! Gostaria de tirar uma dúvida!"><img src="./images/whatsapp.png" width="40px" height="40px"></img></a></p>
+
+                      <p><a href="https://www.instagram.com/contabilidade_digital_/?utm_medium=copy_link"><img src="./images/insta.png" alt="Insta Assesoria Contábil Digital" width="40px" height="40px"></a></p>
+                      <p class="email">Se preferir, me mande um e-mail clicando aqui:<br><br>
+                        <a href="mailto:acessoriacontabil.digitall@gmail.com"><img src="./images/email.png" width="40px" height="40px"></a></p>
+                  </div>
+              </footer>
+
+              <br><br><br>
+              
+
+
+
+
+
+    </div>
+    <br><br>
+    <div class="site">
+        site desenvolvido por @greendevcode - 2022 TODOS OS DIREITOS RESERVADOS
+    </div>
+    
+</body>
+</html>
